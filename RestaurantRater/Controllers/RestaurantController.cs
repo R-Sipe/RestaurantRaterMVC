@@ -13,6 +13,7 @@ namespace RestaurantRater.Controllers
     {
         private RestaurantDbContext _db = new RestaurantDbContext();
         
+        //GET: Restaurant/Index
         public ActionResult Index()
         {
             return View(_db.Restaurants.ToList());
